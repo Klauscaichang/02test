@@ -3,7 +3,7 @@
 
     myApp.controller('myC',function($scope){
 
-        $scope.username = '222';
+        $scope.username = '';
         $scope.password = '';
         $scope.confirm = '';
         $scope.isAgree = false;
@@ -30,7 +30,8 @@
             }else{
                 $scope.btn = '用户名一致';
             }
-
+   
+   
         }
     })
 
