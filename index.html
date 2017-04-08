@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
     <style>
         html,body{
             text-align:center;
@@ -11,12 +12,12 @@
             width:250px;
             border:1px solid red;
         }
- 
+        
     </style>
 </head>
 <body ng-app="myApp">
-    <section class="box" ng-controller='mgC' >
-        <table>
+    <section class="box" ng-controller='myC' >
+        <table> 
             <thead>注册</thead>
             <tr>
                 <td>用户名：</td>
@@ -39,7 +40,10 @@
             </tr>
         </table>
     </section>
+
+    <!--<script src="./node_modules/jquery/dist/jquery.js"></script>-->
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="index.js"></script>
     
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
 </body>
 </html>
