@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,body{
+            text-align:center;
+        }
+        .box{
+            width:250px;
+            border:1px solid red;
+        }
+ 
+    </style>
+</head>
+<body ng-app="myApp">
+    <section class="box" ng-controller='mgC' >
+        <table>
+            <thead>注册</thead>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" ng-model="username"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" ng-model="password"></td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td><input type="password" ng-model="confirm"></td>
+            </tr>
+            <tr>
+                <td>协议：</td>
+                <td><input type="checkbox" ng-model="isAgree"></td>
+            </tr>
+            <tr>
+                <td><input type="button" ng-click='commit()' value="注册"></td>
+            </tr>
+        </table>
+    </section>
+    
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+</body>
+</html>
