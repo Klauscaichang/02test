@@ -1,2 +1,4 @@
 .item
 .tmp
+node_modules
+gulp_module

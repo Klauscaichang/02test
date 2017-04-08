@@ -19,5 +19,8 @@
   "dependencies": {
     "angular": "^1.6.4",
     "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

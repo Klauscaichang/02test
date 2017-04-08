@@ -1,0 +1,1 @@
+function sayHle(){console.log("hello")}function ff(){}sayHle();var aas=123;

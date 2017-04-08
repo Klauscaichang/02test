@@ -9,7 +9,7 @@
             text-align:center;
         }
         .box{
-            width:250px;
+            <!--width:250px;-->
             border:1px solid red;
         }
         
@@ -18,25 +18,24 @@
 <body ng-app="myApp">
     <section class="box" ng-controller='myC' >
         <table> 
-            <thead>注册</thead>
             <tr>
                 <td>用户名：</td>
-                <td><input type="text" ng-model="username"></td>
+                <td><input type="text" ng-model="username"></td><td>{{Nmsg}}</td>
             </tr>
             <tr>
                 <td>密码：</td>
-                <td><input type="password" ng-model="password"></td>
+                <td><input type="password" ng-model="password"></td><td>{{Pmsg}}</td>
             </tr>
             <tr>
                 <td>确认密码：</td>
-                <td><input type="password" ng-model="confirm"></td>
+                <td><input type="password" ng-model="confirm"></td><td>{{Cmsg}}</td>
             </tr>
             <tr>
                 <td>协议：</td>
-                <td><input type="checkbox" ng-model="isAgree"></td>
+                <td><input type="checkbox" ng-model="isAgree"></td>{{Imsg}}
             </tr>
             <tr>
-                <td><input type="button" ng-click='commit()' value="注册"></td>
+                <td><input type="button" ng-click='commit()' value="注册"></td>{{btn}}
             </tr>
         </table>
     </section>
